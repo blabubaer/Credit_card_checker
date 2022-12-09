@@ -100,4 +100,14 @@ function idInvalidCardCompanies(arrayOfIvalidNumbers) {
 };
 
 
-console.log(idInvalidCardCompanies(findInvalidCards(batch)));
+//console.log(idInvalidCardCompanies(findInvalidCards(batch)));
+
+function stringToNumberArray(string){
+    var returnarray = [];
+    for(letter in string){
+        returnarray.push(+string[letter])
+    }
+    //console.log(returnarray);
+    return returnarray;
+}
+//stringToNumberArray("1357");
